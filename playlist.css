@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --gray: #121212;
+    --light-gray: #232323;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    background-color: var(--black);
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.side-bar{
+    background-color: var(--gray);
+    flex: 0.20;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.main-content{
+    flex: 0.8;
+    background-image: linear-gradient(180deg, #90AEA7 0%, #000 70%);
+    margin: 8px 8px 8px 0px;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.player{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--black);
+    bottom: 0;
+}
+
+.logo{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.logo>img{
+    height: 53px;
+    width: 180px;
+}
+
+.player{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--black);
+    bottom: 0;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    margin: 23px 23px;
+}
+
+.link-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 7px;
+    opacity: 0.5;
+}
+
+.link-flex:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.link-flex>img{
+    width: 28px;
+    height: 30px;
+}
+
+.link-flex>a{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.my-playlist{
+    margin-left: 23px;
+    margin-bottom: 23px;
+}
+
+.navigation-bar{
+    width: 100%;
+    height: 55px;
+    background-color: #90AEA7;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.right-left-arrow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 16px;
+    
+}
+
+.arrow{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+}
+
+.arrow>img{
+    height: 20px;
+}
+
+.account-btn{
+    height: 26px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: var(--black);
+    margin-right: 16px;
+}
+
+.account-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 0px 0px;
+}
+
+.account-img>img{
+    height: 23px;
+    width: 23px;
+}
+
+.account-name>p{
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+.dropdown>img{
+    height: 15px;
+    width: 15px;
+}
+
+.header{
+    display: flex;
+}
+
+.playlist{
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.26px;
+}
+
+.pop{
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.holly{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.9%; /* 20.566px */
+    letter-spacing: -0.28px;
+    color: #abaaaa;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.change{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.9%; /* 20.566px */
+    letter-spacing: -0.28px;
+    color: #abaaaa;
+}
+
+.album-details{
+    margin-top: 95px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-left: 40px;
+}
+
+.playlist-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    
+}
+
+.playlist-heading>p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.32px;
+    color: #abaaaa;
+}
+
+.list-bar{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0px 30px;
+    padding-top: 5px;
+}
+
+.list-bar:hover{
+    background-color: rgba(181, 176, 176, 0.11);
+}
+
+.title-div{
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.pic{
+    margin-right: 7px;
+}
+
+.song-title{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.188px
+}
+
+.artist{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #abaaaa;
+}
+
+.album-div{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #abaaaa;
+    padding-right: 170px;
+}
+
+.date-div{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #abaaaa;
+    padding-right: 290px;
+}
+
+.time-div{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #abaaaa;
+}
+
+
+
+
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.song-name{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.playing-image{
+    border-radius: 10px;
+}
+
+.playing-song-name{
+    font-size: 13px;
+}
+
+.singer-name{
+    font-size: 11px;
+    color: #A7A7A7;
+}
+
+.volum{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.play-bar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.play-slider,.volum-slider{
+    -webkit-appearance: none;
+}
+
+.play-slider::-webkit-slider-runnable-track,
+.volum-slider::-webkit-slider-runnable-track{
+    height: 4px;
+    background: #ddd;
+    border: none;
+    border-radius: 100px;
+}
+
+.play-slider::-webkit-slider-thumb,
+.volum-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #1bd760;
+    margin-top: -6px;
+}
+
+.play-slider:focus,.volum-slider:focus{
+    outline: none;
+}
+
+.play-slider:focus::-webkit-slider-runnable-track{
+    background: #ccc;
+}
+
+.play-slider{
+    margin: 0 10px;
+    width: 400px;
+}
+
+.volum-slider{
+    width: 100px;
+    height: 4px;
+    margin-right: 10px;
+}
